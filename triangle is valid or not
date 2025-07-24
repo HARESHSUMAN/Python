@@ -1,0 +1,17 @@
+def is_valid_triangle(a, b, c):
+    if a + b > c and a + c > b and b + c > a:
+        return "Valid triangle"
+    else:
+        return "Invalid triangle"
+
+# Example usage
+try:
+    a = float(input("Enter side a: "))
+    b = float(input("Enter side b: "))
+    c = float(input("Enter side c: "))
+    
+    result = is_valid_triangle(a, b, c)
+    print(result)
+
+except ValueError:
+    print("Please enter valid numbers for sides.")
