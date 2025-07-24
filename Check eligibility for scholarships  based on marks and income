@@ -1,0 +1,16 @@
+def check_scholarship_eligibility(marks, income):
+    if marks >= 85 and income <= 250000:
+        return "Eligible for scholarship"
+    else:
+        return "Not eligible for scholarship"
+
+# Example usage
+try:
+    marks = float(input("Enter your marks (out of 100): "))
+    income = float(input("Enter your annual family income (in INR): "))
+    
+    result = check_scholarship_eligibility(marks, income)
+    print(result)
+
+except ValueError:
+    print("Please enter valid numbers for marks and income.")
